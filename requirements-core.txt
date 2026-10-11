@@ -1,0 +1,7 @@
+# Compatibility profile, not a recovered historical environment lock.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+# The original MultiFC experiment explicitly passes multi_class.
+# https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.LogisticRegression.html
+scikit-learn>=1.3,<1.8

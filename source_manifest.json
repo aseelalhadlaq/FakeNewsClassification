@@ -1,0 +1,2257 @@
+{
+  "schema_version": 1,
+  "experiments": {
+    "liar2_label_granularity": {
+      "notebook_path": "original_notebooks/exp-4-liar2-label-granularity-experimentsv6-final.ipynb",
+      "notebook_sha256": "b9e62dd915b7dfc1169e5b97a8f0639421829e75da3d380f7c6bf8d70f4c2ad0",
+      "cells": [
+        {
+          "index": 2,
+          "path": "original_sources/liar2_label_granularity/cell_002.py",
+          "sha256": "0f18dfdd5f67cd6fd100c42c00c868f05172a05eca8c7629d22e6fc6959ccd87",
+          "lines": 32,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 4,
+          "path": "original_sources/liar2_label_granularity/cell_004.py",
+          "sha256": "edb8f0815a260493f4d6d335054e73858863fef2b11b3866fd7a3cbbfc54269e",
+          "lines": 475,
+          "execution_count": null,
+          "declared_module": "liar2_preprocessor.py",
+          "definitions": [
+            {
+              "name": "Liar2Preprocessor",
+              "type": "ClassDef",
+              "line": 56,
+              "sha256": "10eafbdd2810e9078137a2087b2af87f2a89c2860cdf3a6314f2a2ee6bb97f3f"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "path": "original_sources/liar2_label_granularity/cell_005.py",
+          "sha256": "3cab6c60a850d26c2e5a265c9964342cefc945e463bb8346047a7ed5b8c077b7",
+          "lines": 117,
+          "execution_count": null,
+          "declared_module": "temporal_splitter.py",
+          "definitions": [
+            {
+              "name": "TemporalSplitter",
+              "type": "ClassDef",
+              "line": 38,
+              "sha256": "7e7511302e2034aa629689a346dbb47c12dfe0b1356d9fa1d9112c67e956bd46"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "path": "original_sources/liar2_label_granularity/cell_006.py",
+          "sha256": "5fbb4608458e830ae69024b1b3545eea27db30bca70d8e149d73296b6a3b16df",
+          "lines": 235,
+          "execution_count": null,
+          "declared_module": "da_minilm_rwc_model.py",
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 36,
+              "sha256": "eddc416f682dc54ba5e4d5f711517a9fbce1125d48b543b546f372bf0e38edde"
+            },
+            {
+              "name": "EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 44,
+              "sha256": "00146e8af154edf5bd201644c120eec59acd68be741cb1608f07320a91d522f1"
+            },
+            {
+              "name": "DAMiniLMClassifier",
+              "type": "ClassDef",
+              "line": 62,
+              "sha256": "e0c3bde3ea9536b10f691f1d81468c8f1560d777ce0d23ba98fe89f3674fa7d8"
+            },
+            {
+              "name": "predict_da_minilm_proba",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "8855e864377edb3445ea84730a80623d4abd313dff7cae00f3e7ba6bec436bb6"
+            },
+            {
+              "name": "DAMiniLMModel",
+              "type": "ClassDef",
+              "line": 93,
+              "sha256": "e38c336ccd11957fe2b7bddbd3d72f633efc20429f2c9bce67696c91d8464112"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "path": "original_sources/liar2_label_granularity/cell_007.py",
+          "sha256": "a546cc2c4bec2d897d2fe7ec4f690199be400be7d4b8b5ed1277501bd2def1d6",
+          "lines": 665,
+          "execution_count": null,
+          "declared_module": "da_minilm_experiment_runner.py",
+          "definitions": [
+            {
+              "name": "ordinal_mae",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "e72614bf254383d9ac65a8e50727936bb02de2f0f4fd945de44ebfef53921fbb"
+            },
+            {
+              "name": "within_one_accuracy",
+              "type": "FunctionDef",
+              "line": 86,
+              "sha256": "24d0c4e408fed0a815af4dde6241209e5480629af1607314fc7f324039b56694"
+            },
+            {
+              "name": "expected_calibration_error",
+              "type": "FunctionDef",
+              "line": 90,
+              "sha256": "cb4b139fb0a528847add938bd8c9684c05fd23a9f712743b8562d5297f52d87e"
+            },
+            {
+              "name": "multiclass_brier_score",
+              "type": "FunctionDef",
+              "line": 111,
+              "sha256": "f525f3653bb334e393cc26cdef6e786965aa55e135fb216bfa6359761a0301e6"
+            },
+            {
+              "name": "safe_nll",
+              "type": "FunctionDef",
+              "line": 117,
+              "sha256": "c31f9cdb39cfb3b4a971007701e545c2427a737cb4b291d17b683c17333d2fdf"
+            },
+            {
+              "name": "evaluate_predictions",
+              "type": "FunctionDef",
+              "line": 121,
+              "sha256": "969aae801b6a1898ee5f64f6a90dda4e954382f095c3a38c65b2f3dfc31327a8"
+            },
+            {
+              "name": "normalize_weights",
+              "type": "FunctionDef",
+              "line": 159,
+              "sha256": "316ff9baa07d3f47260a6303b3dc82d86aa4825b51f720159af34c9d1f009ce1"
+            },
+            {
+              "name": "effective_number_class_weights",
+              "type": "FunctionDef",
+              "line": 165,
+              "sha256": "8ece3706248395b63d8b08fa73becff58951173a9392e3d1e5a102bfdbdaa21c"
+            },
+            {
+              "name": "class_sample_weights",
+              "type": "FunctionDef",
+              "line": 177,
+              "sha256": "0e2bd98f3ec414ba35df40e9962e226fca22c4a629f87f631c760dc74aadc526"
+            },
+            {
+              "name": "recency_sample_weights",
+              "type": "FunctionDef",
+              "line": 182,
+              "sha256": "14877f9aeeff9b07f3c45820a0472791d309210a724d2b76b92f9e0480d5db76"
+            },
+            {
+              "name": "combined_sample_weights",
+              "type": "FunctionDef",
+              "line": 191,
+              "sha256": "7c29d7d6b079c5b64fc003a7bc1ee7e104a3a46485367c7a3814cd813120e5b5"
+            },
+            {
+              "name": "softmax_np",
+              "type": "FunctionDef",
+              "line": 202,
+              "sha256": "0b5f862a51c932a376c26fcb8494bc2b146682c9b98103501c9662d173c04cb7"
+            },
+            {
+              "name": "proba_to_logits",
+              "type": "FunctionDef",
+              "line": 209,
+              "sha256": "dfece57b6c441e0e7836d1062a2e094886f01eacb4413cf14267eeeeec467732"
+            },
+            {
+              "name": "logit_adjustment_bias",
+              "type": "FunctionDef",
+              "line": 213,
+              "sha256": "598e6ff4e269417080288107ed8a2027401056f24267214e38c291b182b1cab4"
+            },
+            {
+              "name": "apply_bias_and_temperature",
+              "type": "FunctionDef",
+              "line": 219,
+              "sha256": "c1a064a82537406ff0e6dbc1acfb737ab632b141b3658095d929620f992c9178"
+            },
+            {
+              "name": "select_best_calibration",
+              "type": "FunctionDef",
+              "line": 227,
+              "sha256": "09b15bde74654dbfd46db43f203e9f7fd94dc8e28da20b27f0a226e12bbcfaf8"
+            },
+            {
+              "name": "select_best_calibration_two_stage",
+              "type": "FunctionDef",
+              "line": 258,
+              "sha256": "73905a7ae5a1410b81d84c32d4261bef3eb7054098123e7790fa071c9ba25d75"
+            },
+            {
+              "name": "paired_bootstrap_macro_f1_diff",
+              "type": "FunctionDef",
+              "line": 312,
+              "sha256": "a2d0671a2d143ea4813c2f22a29df68d689960c9751f196962e9fd956fadb55a"
+            },
+            {
+              "name": "DAMiniLMExperimentRunner",
+              "type": "ClassDef",
+              "line": 338,
+              "sha256": "9602ba6e5b8e928436c80b74e36c28112b2371c18d88a7dd84db745784d978c5"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "path": "original_sources/liar2_label_granularity/cell_008.py",
+          "sha256": "82fac873b362a7710acec53e4a577b6ac0932464cfb298eee68b3f97dbe105c7",
+          "lines": 18,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 9,
+          "path": "original_sources/liar2_label_granularity/cell_009.py",
+          "sha256": "2c95cb3857f2a382bf66c0272e7a716727384564b65472e45cf3d5d02ef1d3eb",
+          "lines": 8,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 11,
+          "path": "original_sources/liar2_label_granularity/cell_011.py",
+          "sha256": "a92a2d15407dfe39f295f6ff7358484646c9f89b80da6bd2e704395973bf6d82",
+          "lines": 72,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "LabelCollapser",
+              "type": "ClassDef",
+              "line": 24,
+              "sha256": "b4790532788af64cfaa5e0dcd539e2bead7c4461f83098cfe7a1516b2fad1e73"
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "path": "original_sources/liar2_label_granularity/cell_013.py",
+          "sha256": "aea369caac64fd1b10fd16008e371bef199490745752aceb6cc0330a3ec33d93",
+          "lines": 25,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 15,
+          "path": "original_sources/liar2_label_granularity/cell_015.py",
+          "sha256": "5dfe86abb20a666cbc38f3d7a2c5fea46ed05a0e13371e7c9ccabcd56de216e5",
+          "lines": 16,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 17,
+          "path": "original_sources/liar2_label_granularity/cell_017.py",
+          "sha256": "f13d3ec5f621c7a5f9e8365e2578cde5d328126141304075266d2a84457c0f5e",
+          "lines": 85,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "build_runner",
+              "type": "FunctionDef",
+              "line": 1,
+              "sha256": "425f74e7c5e917162884e139d7a78706b6bc5c076d73a9d4e35b01b3dfd2d7e7"
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "path": "original_sources/liar2_label_granularity/cell_019.py",
+          "sha256": "391c0a370d384df53187679af0abffa029d478b8570e4adab7a661d3f87da8de",
+          "lines": 26,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 20,
+          "path": "original_sources/liar2_label_granularity/cell_020.py",
+          "sha256": "0e894581ae3b68bbbca27820916c1e4c6d2f0946a47c82ac3e491a84b3005830",
+          "lines": 45,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "effect_table",
+              "type": "FunctionDef",
+              "line": 2,
+              "sha256": "6fdad7c28ad7a6e31170891f06635ee81bfe6d04e8f7c4dcfa21324afd51c013"
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "path": "original_sources/liar2_label_granularity/cell_021.py",
+          "sha256": "a70f2b76999f4e424a73cb770c7e0c305e17c0a43a0b0aac287c2ce29e4aba0d",
+          "lines": 54,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "seed_level_effect",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "b7009489ce373fdc50427105a905e3f03bca804eefd12389ccbc39ab9dd8719f"
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "path": "original_sources/liar2_label_granularity/cell_023.py",
+          "sha256": "614b630366c1d8031b2a81ca671028c97307a473df2842b35c28b10094068a7d",
+          "lines": 35,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "per_class_recall_rows",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "e4dc43221847840ddd182a6c583d434e1c45a79cd5a03b1b56e1c2fc527730a8"
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "path": "original_sources/liar2_label_granularity/cell_024.py",
+          "sha256": "a3834d9800b47374c9536f2dc7c0bbac1b99f52b0062f1dafc7ccf194306c2ba",
+          "lines": 82,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "compute_chance_floors",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "574b3f744db8536da367b86e3a62ae90efd9353795c9a3e2b0488edf4c3c6b04"
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "path": "original_sources/liar2_label_granularity/cell_026.py",
+          "sha256": "2d9dfac5d92f99b8806e08501aa3157ae62fde4e37b4fb5e78531dbbbb26046d",
+          "lines": 16,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        }
+      ]
+    },
+    "ensemble": {
+      "notebook_path": "original_notebooks/da-ensemble-exp-v3-0(1).ipynb",
+      "notebook_sha256": "131301e3d5b0ab95fa4c78e8b888d70ae38f0ab11db13b0480622e5665370694",
+      "cells": [
+        {
+          "index": 0,
+          "path": "original_sources/ensemble/cell_000.py",
+          "sha256": "edb8f0815a260493f4d6d335054e73858863fef2b11b3866fd7a3cbbfc54269e",
+          "lines": 475,
+          "execution_count": 1,
+          "declared_module": "liar2_preprocessor.py",
+          "definitions": [
+            {
+              "name": "Liar2Preprocessor",
+              "type": "ClassDef",
+              "line": 56,
+              "sha256": "10eafbdd2810e9078137a2087b2af87f2a89c2860cdf3a6314f2a2ee6bb97f3f"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "path": "original_sources/ensemble/cell_001.py",
+          "sha256": "5fbb4608458e830ae69024b1b3545eea27db30bca70d8e149d73296b6a3b16df",
+          "lines": 235,
+          "execution_count": 2,
+          "declared_module": "da_minilm_rwc_model.py",
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 36,
+              "sha256": "eddc416f682dc54ba5e4d5f711517a9fbce1125d48b543b546f372bf0e38edde"
+            },
+            {
+              "name": "EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 44,
+              "sha256": "00146e8af154edf5bd201644c120eec59acd68be741cb1608f07320a91d522f1"
+            },
+            {
+              "name": "DAMiniLMClassifier",
+              "type": "ClassDef",
+              "line": 62,
+              "sha256": "e0c3bde3ea9536b10f691f1d81468c8f1560d777ce0d23ba98fe89f3674fa7d8"
+            },
+            {
+              "name": "predict_da_minilm_proba",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "8855e864377edb3445ea84730a80623d4abd313dff7cae00f3e7ba6bec436bb6"
+            },
+            {
+              "name": "DAMiniLMModel",
+              "type": "ClassDef",
+              "line": 93,
+              "sha256": "e38c336ccd11957fe2b7bddbd3d72f633efc20429f2c9bce67696c91d8464112"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "path": "original_sources/ensemble/cell_002.py",
+          "sha256": "590f66e8daa68f78335925e9b1f14e54a2c3a65aa3342df75f422aa64b16c1fa",
+          "lines": 795,
+          "execution_count": 3,
+          "declared_module": "ensemble_experiment.py",
+          "definitions": [
+            {
+              "name": "normalize_weights",
+              "type": "FunctionDef",
+              "line": 115,
+              "sha256": "316ff9baa07d3f47260a6303b3dc82d86aa4825b51f720159af34c9d1f009ce1"
+            },
+            {
+              "name": "effective_number_class_weights",
+              "type": "FunctionDef",
+              "line": 121,
+              "sha256": "f964caf7745f2eb4c6ceb9385c2c314c02b2316a78c7a9b1e9855d253e555742"
+            },
+            {
+              "name": "class_sample_weights",
+              "type": "FunctionDef",
+              "line": 132,
+              "sha256": "0e2bd98f3ec414ba35df40e9962e226fca22c4a629f87f631c760dc74aadc526"
+            },
+            {
+              "name": "recency_sample_weights",
+              "type": "FunctionDef",
+              "line": 137,
+              "sha256": "5d8601bdfb2b8c356e939b4c0acdcdc29a7df71bc2af1cf63104d188fe05bfb2"
+            },
+            {
+              "name": "combined_sample_weights",
+              "type": "FunctionDef",
+              "line": 144,
+              "sha256": "7c29d7d6b079c5b64fc003a7bc1ee7e104a3a46485367c7a3814cd813120e5b5"
+            },
+            {
+              "name": "softmax_np",
+              "type": "FunctionDef",
+              "line": 151,
+              "sha256": "0b5f862a51c932a376c26fcb8494bc2b146682c9b98103501c9662d173c04cb7"
+            },
+            {
+              "name": "proba_to_logits",
+              "type": "FunctionDef",
+              "line": 158,
+              "sha256": "dfece57b6c441e0e7836d1062a2e094886f01eacb4413cf14267eeeeec467732"
+            },
+            {
+              "name": "logit_adjustment_bias",
+              "type": "FunctionDef",
+              "line": 162,
+              "sha256": "598e6ff4e269417080288107ed8a2027401056f24267214e38c291b182b1cab4"
+            },
+            {
+              "name": "apply_bias_and_temperature",
+              "type": "FunctionDef",
+              "line": 168,
+              "sha256": "c1a064a82537406ff0e6dbc1acfb737ab632b141b3658095d929620f992c9178"
+            },
+            {
+              "name": "safe_nll",
+              "type": "FunctionDef",
+              "line": 176,
+              "sha256": "c31f9cdb39cfb3b4a971007701e545c2427a737cb4b291d17b683c17333d2fdf"
+            },
+            {
+              "name": "select_best_calibration_two_stage",
+              "type": "FunctionDef",
+              "line": 180,
+              "sha256": "f177dd6997c82f1347cb70f8ac70c236e84cde3c6397e83463118d1e38f60d5c"
+            },
+            {
+              "name": "paired_bootstrap_macro_f1_diff",
+              "type": "FunctionDef",
+              "line": 209,
+              "sha256": "5d8ace4f89357702ab806e3b1d910842bfaf29465b27f27225d6b7c45628fe4c"
+            },
+            {
+              "name": "evaluate_proba",
+              "type": "FunctionDef",
+              "line": 227,
+              "sha256": "0b67973b06c089e2fc57d8281f0e2e2beba0f863c2d2fecab617bcabab7fb17f"
+            },
+            {
+              "name": "_assert_class_order",
+              "type": "FunctionDef",
+              "line": 237,
+              "sha256": "6ef2822552db9c06455eac3c4bf0560ea9899879ea6489c25063020b04d22f4b"
+            },
+            {
+              "name": "train_tfidf_logreg",
+              "type": "FunctionDef",
+              "line": 269,
+              "sha256": "4fc9d83ee9971c16351569efd0019f07d3787bde511781bec7367d3bdf74b05b"
+            },
+            {
+              "name": "train_tfidf_linear_svm",
+              "type": "FunctionDef",
+              "line": 279,
+              "sha256": "150dd6d0d2494bdc2e0386ef306e551e4df7c13cf43326593e576de122326dbc"
+            },
+            {
+              "name": "train_tfidf_logreg_metadata",
+              "type": "FunctionDef",
+              "line": 300,
+              "sha256": "79df884f0107bc428df49c56028d984be139b98d66aa92b452fb412806f4f66b"
+            },
+            {
+              "name": "_train_da_family_one_seed",
+              "type": "FunctionDef",
+              "line": 337,
+              "sha256": "405a13fcf94bc2fe20b344d9a18839d2a896f9cc11e59b4b246738d82e36a221"
+            },
+            {
+              "name": "_train_logreg_on_embeddings",
+              "type": "FunctionDef",
+              "line": 390,
+              "sha256": "0115f6cb5637b122a1469ec670dadf8c44db837d7acbe4c1962fb21b7aca294c"
+            },
+            {
+              "name": "train_da_minilm_family",
+              "type": "FunctionDef",
+              "line": 397,
+              "sha256": "92aa54d647c8f2780e6df6b6d151b1e902825246a6a58a0506369b12949aeb45"
+            },
+            {
+              "name": "train_distilbert",
+              "type": "FunctionDef",
+              "line": 426,
+              "sha256": "19db0ea9c5b2e43b0efbb3e1d2b7a7f8be59f4c24d5d5a3fd2fd9ed7ee2e19d9"
+            },
+            {
+              "name": "build_full_project_ensemble_analyzer",
+              "type": "FunctionDef",
+              "line": 500,
+              "sha256": "b43e1a95449642ba26a7c6cebaa06cdc0e23aa142b3547f44ed0558d648db3a1"
+            },
+            {
+              "name": "EnsembleAnalyzer",
+              "type": "ClassDef",
+              "line": 567,
+              "sha256": "32b6364f906271760697c24eae3677de95489605c0d9483961480c8c49ff3e02"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "path": "original_sources/ensemble/cell_003.py",
+          "sha256": "185e111c7619fec169477bb1f29053bc68d94e3659905c0b8a38c13159238580",
+          "lines": 38,
+          "execution_count": 4,
+          "declared_module": null,
+          "definitions": []
+        }
+      ]
+    },
+    "multifc_da_minilm": {
+      "notebook_path": "original_notebooks/da-minilm-multifc-dataset-final.ipynb",
+      "notebook_sha256": "6915002aa4bc89fedd740190c03f8f9fdce9c29843e4ca4f6d78d50a4160252f",
+      "cells": [
+        {
+          "index": 1,
+          "path": "original_sources/multifc_da_minilm/cell_001.py",
+          "sha256": "97ea4b470a31d5afd6c85044263db0e8b48a8134dcb5e6d3d2fbbfad9c872b65",
+          "lines": 20,
+          "execution_count": 4,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 2,
+          "path": "original_sources/multifc_da_minilm/cell_002.py",
+          "sha256": "3ccf31e338ba08d3463a9b9791394c881e658be69d9656f6a46695a8432f6f48",
+          "lines": 65,
+          "execution_count": 5,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 58,
+              "sha256": "b2c7656452d197a6cb69fd772247177454957076aefaeba696f3260c94149fc2"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "path": "original_sources/multifc_da_minilm/cell_003.py",
+          "sha256": "d4cb05826ff5e9b0dea15a6ea0c4524b935a2b9369dd25f63ecd244753e3c970",
+          "lines": 83,
+          "execution_count": 6,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "find_file",
+              "type": "FunctionDef",
+              "line": 5,
+              "sha256": "5b4897de00649e0ec8c68ac1f33e7ad6fb975b6d0e0bada5230ddb7091686dc7"
+            },
+            {
+              "name": "read_multifc_tsv",
+              "type": "FunctionDef",
+              "line": 44,
+              "sha256": "a2302d7ad0889c1e10cb09c03248b7d67a6e2116f200e56bca418b29feddac9c"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "path": "original_sources/multifc_da_minilm/cell_004.py",
+          "sha256": "93f56589ca267437989a35180401f865a80db50d93c45094a23ee6139125d276",
+          "lines": 134,
+          "execution_count": 7,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "clean_text",
+              "type": "FunctionDef",
+              "line": 11,
+              "sha256": "670b6c6cdd9d88d1ef14a54d7dc46f04caaf164458297d29937de0d757904024"
+            },
+            {
+              "name": "normalize_label_string",
+              "type": "FunctionDef",
+              "line": 21,
+              "sha256": "6ed552901a66a3b45d7f07c89a943c6820885cbae200f19a8be3cd1126071fef"
+            },
+            {
+              "name": "map_multifc_label",
+              "type": "FunctionDef",
+              "line": 78,
+              "sha256": "0a60958e32aec61722b049ad2115a92ae551b72e070bdfb0ef756d1276b24d0b"
+            },
+            {
+              "name": "parse_multifc_date",
+              "type": "FunctionDef",
+              "line": 94,
+              "sha256": "b25a04faedc83d67143d8568aefbce3f37ae9fe41c69b7c3b23f59a1d057ee73"
+            },
+            {
+              "name": "standardize_multifc",
+              "type": "FunctionDef",
+              "line": 104,
+              "sha256": "0b0ae65346184b31e4f5bf39d62d05ce694e27e0a323601eb25ec29904c931c6"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "path": "original_sources/multifc_da_minilm/cell_005.py",
+          "sha256": "a57c48ffdf6311d9e4664a1c44e6dee4ce7e72e0fd4f9c441eaa49fbc2a2b3cd",
+          "lines": 110,
+          "execution_count": 8,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "build_model_text",
+              "type": "FunctionDef",
+              "line": 13,
+              "sha256": "fb8f9528848e0b7a32fa3b9732d9b82194a6e65a129e1211e5a983754210a99a"
+            },
+            {
+              "name": "audit",
+              "type": "FunctionDef",
+              "line": 77,
+              "sha256": "4c9275244d320bff4b803f5ccc1c8edeb799e1ffbaebd3a7e0fd4dfc6c31c77e"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "path": "original_sources/multifc_da_minilm/cell_006.py",
+          "sha256": "b9af1e7cb8250b5c345829ece6bab9560c0d995442f540589f68df1930866a93",
+          "lines": 111,
+          "execution_count": 9,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "split_train_indices_for_official_eval",
+              "type": "FunctionDef",
+              "line": 8,
+              "sha256": "d21adec1f55a3fff3dc13a37a279197724b8083e2ca204cbb6f81f85b0c09ad9"
+            },
+            {
+              "name": "make_chronological_split_indices",
+              "type": "FunctionDef",
+              "line": 33,
+              "sha256": "7e97b19c4c2c8f06d7022e62d223ccb7cd91c94893b947f9efc8113b745ae172"
+            },
+            {
+              "name": "make_random_stratified_split_indices",
+              "type": "FunctionDef",
+              "line": 44,
+              "sha256": "1e3177663f6e9f8ef604d9e54c67fa38607cf7f07e9857367ef0fb99a6f06b85"
+            },
+            {
+              "name": "make_rolling_windows",
+              "type": "FunctionDef",
+              "line": 64,
+              "sha256": "f74cf86bcc1752f18491adcc24ee265d5db8b464cc17c05277e2208a57afb201"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "path": "original_sources/multifc_da_minilm/cell_007.py",
+          "sha256": "d54f4fc0dba0b4f6591d4b0db7a6cee7ee8f90201fae7e0d817c826b77445d00",
+          "lines": 184,
+          "execution_count": 10,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "ordinal_mae",
+              "type": "FunctionDef",
+              "line": 5,
+              "sha256": "0decc6278d9278eccbd6e013da2e3e11241b904fc0dbb85d95bc3726143512e9"
+            },
+            {
+              "name": "within_one_accuracy",
+              "type": "FunctionDef",
+              "line": 9,
+              "sha256": "01d19fbf626d91048c8a1ad4302c467aad882862e26d1eaf35222f96ac365fe3"
+            },
+            {
+              "name": "expected_calibration_error",
+              "type": "FunctionDef",
+              "line": 13,
+              "sha256": "eb26f77b5dd58e5c0facd7894257f7838a1d02bdbda82436ed63e92fd0e0311a"
+            },
+            {
+              "name": "multiclass_brier_score",
+              "type": "FunctionDef",
+              "line": 32,
+              "sha256": "97c8f0261425efa682b20d34bf989649fd62f377de3ec2438f1760575d5111b7"
+            },
+            {
+              "name": "compute_metrics",
+              "type": "FunctionDef",
+              "line": 40,
+              "sha256": "9a47ca6b064bdf6e4f6abbe98005f7c23b78225b87bb391e881d5bb1e5ec13a3"
+            },
+            {
+              "name": "normalize_weights",
+              "type": "FunctionDef",
+              "line": 59,
+              "sha256": "73c002c46f5f162706f1b130a1eb407f67e6d9331969c23038e63c3d6f8bffce"
+            },
+            {
+              "name": "effective_num_class_weights",
+              "type": "FunctionDef",
+              "line": 65,
+              "sha256": "10001ff7a35f481742dfea1f17b1485cd9ca4d1b5a6385b4707e524c984bec06"
+            },
+            {
+              "name": "recency_exp_weights_from_time_rank",
+              "type": "FunctionDef",
+              "line": 74,
+              "sha256": "105172ca8c736bfb4da8c8b378028218c49b86cdcc4cb5e04cba4550a7a40605"
+            },
+            {
+              "name": "combined_sample_weights",
+              "type": "FunctionDef",
+              "line": 84,
+              "sha256": "59a994706adc7e50bdfd1d7d1a4bb560d373cd052acad2ebcc8e2186494fa3ad"
+            },
+            {
+              "name": "softmax_np",
+              "type": "FunctionDef",
+              "line": 90,
+              "sha256": "b42a21c3097fe8a8a18a8db26d34a0b18628110cf3124d6e2af9157977c80233"
+            },
+            {
+              "name": "logit_adjustment_bias",
+              "type": "FunctionDef",
+              "line": 96,
+              "sha256": "832eca60fd2efcdf500b5434f09e4bef2bb028b583de2162d3341655d0022c9d"
+            },
+            {
+              "name": "apply_bias_and_temperature",
+              "type": "FunctionDef",
+              "line": 103,
+              "sha256": "8e37b6f030952bb674474ad46937b6d1121cb705eff07d956a713404a39ddac7"
+            },
+            {
+              "name": "select_best_calibration",
+              "type": "FunctionDef",
+              "line": 111,
+              "sha256": "a2b98a00b9426093d0802106c921364f3b41b4d0e65a0ee9bb2d4dd9ddefaf9e"
+            },
+            {
+              "name": "paired_bootstrap_macro_f1_diff",
+              "type": "FunctionDef",
+              "line": 130,
+              "sha256": "64e84389b2eee457e65b69cae678551328170d5385508132fb34cb8e7e6c5a63"
+            },
+            {
+              "name": "benjamini_hochberg",
+              "type": "FunctionDef",
+              "line": 157,
+              "sha256": "fb7fd3df5249fa70d419584cfa7403041debfb1410c8f58df28a0987262e5c55"
+            },
+            {
+              "name": "summarize_results",
+              "type": "FunctionDef",
+              "line": 172,
+              "sha256": "8926776b24511c750a254876ee91545f9ca7773dda57c2d0d24c31f72e0b6cb6"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "path": "original_sources/multifc_da_minilm/cell_008.py",
+          "sha256": "c9e752003c28422559c315f5ce0a5718548ee885b3fe8d0498b80351b301fdd5",
+          "lines": 49,
+          "execution_count": 11,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "safe_cache_name",
+              "type": "FunctionDef",
+              "line": 9,
+              "sha256": "0f3fde67bc20f2327c1c41c8a0b111cf41e9da6406ef15ae61ad2830d08353d7"
+            },
+            {
+              "name": "encode_texts_minilm",
+              "type": "FunctionDef",
+              "line": 13,
+              "sha256": "d04a70f1fcdac1af0d5453e0a816dbfd9d93b70dd6db775a004d7bebe0567974"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "path": "original_sources/multifc_da_minilm/cell_009.py",
+          "sha256": "a59d1deceeef109b1b880dcc2f601e2a973068f2ae0346e3c81cf189f58792f1",
+          "lines": 117,
+          "execution_count": 12,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 5,
+              "sha256": "3ab6d1a0dd0772ba81fce963cc474708f0099266065f53345f2d9d3037a80c26"
+            },
+            {
+              "name": "DAMiniLMMLP",
+              "type": "ClassDef",
+              "line": 23,
+              "sha256": "0e99c4aa5442e66e8fc75f04fcf15c7873404e784db0f6e555e2f3f3cbdbfee5"
+            },
+            {
+              "name": "predict_mlp",
+              "type": "FunctionDef",
+              "line": 41,
+              "sha256": "30558ee26f3a2d448f0affeca8850641c4db9bb7439b4111987b0332031cd74d"
+            },
+            {
+              "name": "train_da_minilm_mlp",
+              "type": "FunctionDef",
+              "line": 54,
+              "sha256": "cc7b907b972ece07217814fe398c68bd9f54bd1e4fa12bffac0874819ad96e9e"
+            },
+            {
+              "name": "train_logreg_baseline",
+              "type": "FunctionDef",
+              "line": 106,
+              "sha256": "1dd0c205eadbc751c93fe9c1fe07b1603bb93a8fdd24b03b3820a918e61b89aa"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "path": "original_sources/multifc_da_minilm/cell_010.py",
+          "sha256": "f8cc901383866879f5df22a9c51749f129f52fc98afc9423d2b8d093fd7ceb8b",
+          "lines": 100,
+          "execution_count": 13,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "run_single_minilm_experiment",
+              "type": "FunctionDef",
+              "line": 9,
+              "sha256": "cf5731d4ca3e5e0a362ea3f550dedd5c01256e670880a982c932e5ee85dd79d3"
+            },
+            {
+              "name": "get_eval_indices",
+              "type": "FunctionDef",
+              "line": 93,
+              "sha256": "8c22d10d95aecc929c6ed7b3481e087d8bf58a1978facf52fd9dd00e7d9d4d58"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "path": "original_sources/multifc_da_minilm/cell_011.py",
+          "sha256": "f8cc377a69d32ea9431e68b0b89fd4bb7bd08a5891582f377ee7191bbc6305b0",
+          "lines": 55,
+          "execution_count": 14,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 12,
+          "path": "original_sources/multifc_da_minilm/cell_012.py",
+          "sha256": "5b721a9c9c01851616c36b89809815e68238f02c447d62f45ae99f13f152e4a9",
+          "lines": 52,
+          "execution_count": 15,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 13,
+          "path": "original_sources/multifc_da_minilm/cell_013.py",
+          "sha256": "e29d5c6797b586bb469b8eb01f4f64bcab4c64f11362a540002b887588dc4324",
+          "lines": 51,
+          "execution_count": 16,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 14,
+          "path": "original_sources/multifc_da_minilm/cell_014.py",
+          "sha256": "2f10b0e47c8e349deb73ec9b16200584f55a48ff0c3f498ce9ac3a8e6263c655",
+          "lines": 59,
+          "execution_count": 17,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 15,
+          "path": "original_sources/multifc_da_minilm/cell_015.py",
+          "sha256": "0c75773617009b65bd670cff6831ad6277ab496573d3fa9353976e681f37d903",
+          "lines": 87,
+          "execution_count": 18,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 16,
+          "path": "original_sources/multifc_da_minilm/cell_016.py",
+          "sha256": "51993422ad7734f5be2e3c667a1cb0275e7bb4eea8286ab93ce6b136fd0df314",
+          "lines": 52,
+          "execution_count": 19,
+          "declared_module": null,
+          "definitions": []
+        }
+      ]
+    },
+    "multifc_label_granularity": {
+      "notebook_path": "original_notebooks/multifc-label-granularity-experiments(2).ipynb",
+      "notebook_sha256": "5d0460ff3abb113ad32f88ce82c062df4d61e26e0c0ecdb3b9057c1fd0661670",
+      "cells": [
+        {
+          "index": 2,
+          "path": "original_sources/multifc_label_granularity/cell_002.py",
+          "sha256": "6db1b66c85c7257068215a00b0093f6a79a84a994722fcf10edb3cd04835e078",
+          "lines": 20,
+          "execution_count": 4,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 3,
+          "path": "original_sources/multifc_label_granularity/cell_003.py",
+          "sha256": "483e529e3be483d8d55bfd5cb18b03138081c0e60d24167ab74f48ac9ae1c2f7",
+          "lines": 76,
+          "execution_count": 5,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 6,
+          "path": "original_sources/multifc_label_granularity/cell_006.py",
+          "sha256": "fdd8f0ce1a5ba1c4124fbc8987e0903afce35a7d89a1a7de7f4734cce8e32473",
+          "lines": 299,
+          "execution_count": 6,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "_mfc_norm_label",
+              "type": "FunctionDef",
+              "line": 12,
+              "sha256": "7e78248366c41ecb03bf087bb1e6a713f2aa90d7b6555860ae3e4daf551ec02e"
+            },
+            {
+              "name": "MultiFCPreprocessor",
+              "type": "ClassDef",
+              "line": 62,
+              "sha256": "ef31bb732d67ab7a79bdbfb94f6705f05a91ffee8404919010af9e55259c7a69"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "path": "original_sources/multifc_label_granularity/cell_008.py",
+          "sha256": "a2cbac19a9a28d088673128d0bdbc3ac84ba823385cee91e523f41bd90b24d05",
+          "lines": 68,
+          "execution_count": 7,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "LabelCollapser",
+              "type": "ClassDef",
+              "line": 18,
+              "sha256": "77650bcfa6408ca04da021a5e8fe2ea945f13ea5782d35e770a04f75d0db9110"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "path": "original_sources/multifc_label_granularity/cell_010.py",
+          "sha256": "c5b0782489d555e1a803d779336fe3517db1f53efa351446bb6ae70f926894da",
+          "lines": 44,
+          "execution_count": 8,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 7,
+              "sha256": "eddc416f682dc54ba5e4d5f711517a9fbce1125d48b543b546f372bf0e38edde"
+            },
+            {
+              "name": "TemporalSplitter",
+              "type": "ClassDef",
+              "line": 15,
+              "sha256": "5da16a1b5191c052eb3fb3942e4ca21fd68e3eb897715e42edcc79bfce617866"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "path": "original_sources/multifc_label_granularity/cell_012.py",
+          "sha256": "868b3f8a15f8f928bb8a8ec2ba6fb8cb7c8947dbf3751ae24ffbe0ee5ae86263",
+          "lines": 298,
+          "execution_count": 9,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "_EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 4,
+              "sha256": "eeb6da88441cdaa2be2b14ce7f2a12abce9b60fb48976839ce29ad49582bf1f3"
+            },
+            {
+              "name": "_DAMiniLMClassifier",
+              "type": "ClassDef",
+              "line": 22,
+              "sha256": "feb3388f170b72890ed43dae0f375e287a3c9d29dc756d896dfe3741c41e5c4e"
+            },
+            {
+              "name": "DAMiniLMModel",
+              "type": "ClassDef",
+              "line": 40,
+              "sha256": "9e241d89547bdc51cc2cbe03f718270eb3f0dba094ddfc2c735c922f36153b4b"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "path": "original_sources/multifc_label_granularity/cell_014.py",
+          "sha256": "bb9c1f67b891c50ebf893b3c492ed8b6725c8b847d1090e1a590ea2460471529",
+          "lines": 153,
+          "execution_count": 10,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "DAMiniLMExperimentRunner",
+              "type": "ClassDef",
+              "line": 12,
+              "sha256": "a1fcd9edfbacd7ff1ca775ffd8598ce3c644a75667b5e869011e0f07e6b86016"
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "path": "original_sources/multifc_label_granularity/cell_015.py",
+          "sha256": "8184244e50eb25a705c328d5e1efc1e1b9eea2c7dde7fb18fd7d339e1b90a5cd",
+          "lines": 6,
+          "execution_count": 11,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 17,
+          "path": "original_sources/multifc_label_granularity/cell_017.py",
+          "sha256": "0dbe6e92f33f32975c438fc7846b6987f306c377e7f862e953ca2a39fe64b5ad",
+          "lines": 47,
+          "execution_count": 12,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "_resolve",
+              "type": "FunctionDef",
+              "line": 4,
+              "sha256": "486687ba5ffcaa5eee07009bb2c055c81bfec72ce811ea6798998632c06c584f"
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "path": "original_sources/multifc_label_granularity/cell_019.py",
+          "sha256": "ebd2efac4aee5db5929fa67113c3ffef105edfc083a74fc97484fde7dd7e2f24",
+          "lines": 15,
+          "execution_count": 13,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 21,
+          "path": "original_sources/multifc_label_granularity/cell_021.py",
+          "sha256": "47fb6c2603fcfb815a2423ae5532017e1341fbd412733bd272ecb4b7b4275e2c",
+          "lines": 79,
+          "execution_count": 14,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "build_runner",
+              "type": "FunctionDef",
+              "line": 1,
+              "sha256": "839389104e7eb08ea0eb43641cbd3cdea30afb7550e9ace09074601c37838a15"
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "path": "original_sources/multifc_label_granularity/cell_023.py",
+          "sha256": "8308b5a3eef2dedebe66919f4c8df654ae9fa341c668329b75f39e568541dd1f",
+          "lines": 23,
+          "execution_count": 15,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 24,
+          "path": "original_sources/multifc_label_granularity/cell_024.py",
+          "sha256": "eda1222680b3acc9bbd94b2f2c79f10d2d60d2d76d819158accb9173b238d2c3",
+          "lines": 44,
+          "execution_count": 16,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "effect_table",
+              "type": "FunctionDef",
+              "line": 2,
+              "sha256": "f6bd90d50f908141cfe39c808258b83fd15c0328a4538fa5667bd2dcb23e5ff7"
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "path": "original_sources/multifc_label_granularity/cell_026.py",
+          "sha256": "79393fb7b375c9929bc02c708bc54474decbc8431c3c11c36488907f645dd6a1",
+          "lines": 52,
+          "execution_count": 17,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "seed_level_effect",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "22d576a9348852140b1b3a2fe8138af7fdc359c55d32b7930e18df974b642d37"
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "path": "original_sources/multifc_label_granularity/cell_028.py",
+          "sha256": "3e6bed3652ae70f75c60f7baf9539d1ce8423b4d4054a410dc98e73501525ac1",
+          "lines": 35,
+          "execution_count": 18,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "per_class_recall_rows",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "0eb244486fe0d0ec3334a3f40bb01d6e12a4b984aa0791374645bdde3249f6c6"
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "path": "original_sources/multifc_label_granularity/cell_030.py",
+          "sha256": "9396cfa1db19841b1fc3aeea65a85caed24f7ecdc85431b507d8a9d9a474466f",
+          "lines": 71,
+          "execution_count": 19,
+          "declared_module": null,
+          "definitions": [
+            {
+              "name": "compute_chance_floors",
+              "type": "FunctionDef",
+              "line": 3,
+              "sha256": "75fcfc214b4e482fff8f44e0bed37e3cc630e282992973eaa10b3a9a8fdb69d0"
+            }
+          ]
+        },
+        {
+          "index": 32,
+          "path": "original_sources/multifc_label_granularity/cell_032.py",
+          "sha256": "e8f577b56324aef058705328ef73c018a47ba7dabd296ed8a863dd5ea4dbbc45",
+          "lines": 20,
+          "execution_count": 20,
+          "declared_module": null,
+          "definitions": []
+        }
+      ]
+    },
+    "baseline_comparison": {
+      "notebook_path": "original_notebooks/exp1-baseline-models-comparisons-codebase-v10-0-final.ipynb",
+      "notebook_sha256": "93ce5727ef416aee23f9385dea25750fcd22adf793158dc5a0f652b622a95998",
+      "cells": [
+        {
+          "index": 1,
+          "path": "original_sources/baseline_comparison/cell_001.py",
+          "sha256": "c05808579f7ac4a5e1205f074eb86d2113c5c665abd29e11fd401847ae673cca",
+          "lines": 362,
+          "execution_count": 5,
+          "declared_module": "liar_preprocessor.py",
+          "definitions": [
+            {
+              "name": "LiarPreprocessor",
+              "type": "ClassDef",
+              "line": 59,
+              "sha256": "c1d6610ea09745bd64ffebd9ce19ca7905d1d91c1cbfc3519d2a0e32d744226a"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "path": "original_sources/baseline_comparison/cell_002.py",
+          "sha256": "edb8f0815a260493f4d6d335054e73858863fef2b11b3866fd7a3cbbfc54269e",
+          "lines": 475,
+          "execution_count": 6,
+          "declared_module": "liar2_preprocessor.py",
+          "definitions": [
+            {
+              "name": "Liar2Preprocessor",
+              "type": "ClassDef",
+              "line": 56,
+              "sha256": "10eafbdd2810e9078137a2087b2af87f2a89c2860cdf3a6314f2a2ee6bb97f3f"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "path": "original_sources/baseline_comparison/cell_003.py",
+          "sha256": "959889bf5d287e63c0713d207aed1d7bfb220854746e60f8723989b6d23f20af",
+          "lines": 599,
+          "execution_count": 7,
+          "declared_module": "drift_analysis.py",
+          "definitions": [
+            {
+              "name": "DriftAnalysis",
+              "type": "ClassDef",
+              "line": 90,
+              "sha256": "1d97be3291017f64a73220741e08c4afba7a1c0be475f30d96c61a31f8d94d40"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "path": "original_sources/baseline_comparison/cell_005.py",
+          "sha256": "3cab6c60a850d26c2e5a265c9964342cefc945e463bb8346047a7ed5b8c077b7",
+          "lines": 117,
+          "execution_count": 8,
+          "declared_module": "temporal_splitter.py",
+          "definitions": [
+            {
+              "name": "TemporalSplitter",
+              "type": "ClassDef",
+              "line": 38,
+              "sha256": "7e7511302e2034aa629689a346dbb47c12dfe0b1356d9fa1d9112c67e956bd46"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "path": "original_sources/baseline_comparison/cell_007.py",
+          "sha256": "5fbb4608458e830ae69024b1b3545eea27db30bca70d8e149d73296b6a3b16df",
+          "lines": 235,
+          "execution_count": 9,
+          "declared_module": "da_minilm_rwc_model.py",
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 36,
+              "sha256": "eddc416f682dc54ba5e4d5f711517a9fbce1125d48b543b546f372bf0e38edde"
+            },
+            {
+              "name": "EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 44,
+              "sha256": "00146e8af154edf5bd201644c120eec59acd68be741cb1608f07320a91d522f1"
+            },
+            {
+              "name": "DAMiniLMClassifier",
+              "type": "ClassDef",
+              "line": 62,
+              "sha256": "e0c3bde3ea9536b10f691f1d81468c8f1560d777ce0d23ba98fe89f3674fa7d8"
+            },
+            {
+              "name": "predict_da_minilm_proba",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "8855e864377edb3445ea84730a80623d4abd313dff7cae00f3e7ba6bec436bb6"
+            },
+            {
+              "name": "DAMiniLMModel",
+              "type": "ClassDef",
+              "line": 93,
+              "sha256": "e38c336ccd11957fe2b7bddbd3d72f633efc20429f2c9bce67696c91d8464112"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "path": "original_sources/baseline_comparison/cell_008.py",
+          "sha256": "a546cc2c4bec2d897d2fe7ec4f690199be400be7d4b8b5ed1277501bd2def1d6",
+          "lines": 665,
+          "execution_count": 10,
+          "declared_module": "da_minilm_experiment_runner.py",
+          "definitions": [
+            {
+              "name": "ordinal_mae",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "e72614bf254383d9ac65a8e50727936bb02de2f0f4fd945de44ebfef53921fbb"
+            },
+            {
+              "name": "within_one_accuracy",
+              "type": "FunctionDef",
+              "line": 86,
+              "sha256": "24d0c4e408fed0a815af4dde6241209e5480629af1607314fc7f324039b56694"
+            },
+            {
+              "name": "expected_calibration_error",
+              "type": "FunctionDef",
+              "line": 90,
+              "sha256": "cb4b139fb0a528847add938bd8c9684c05fd23a9f712743b8562d5297f52d87e"
+            },
+            {
+              "name": "multiclass_brier_score",
+              "type": "FunctionDef",
+              "line": 111,
+              "sha256": "f525f3653bb334e393cc26cdef6e786965aa55e135fb216bfa6359761a0301e6"
+            },
+            {
+              "name": "safe_nll",
+              "type": "FunctionDef",
+              "line": 117,
+              "sha256": "c31f9cdb39cfb3b4a971007701e545c2427a737cb4b291d17b683c17333d2fdf"
+            },
+            {
+              "name": "evaluate_predictions",
+              "type": "FunctionDef",
+              "line": 121,
+              "sha256": "969aae801b6a1898ee5f64f6a90dda4e954382f095c3a38c65b2f3dfc31327a8"
+            },
+            {
+              "name": "normalize_weights",
+              "type": "FunctionDef",
+              "line": 159,
+              "sha256": "316ff9baa07d3f47260a6303b3dc82d86aa4825b51f720159af34c9d1f009ce1"
+            },
+            {
+              "name": "effective_number_class_weights",
+              "type": "FunctionDef",
+              "line": 165,
+              "sha256": "8ece3706248395b63d8b08fa73becff58951173a9392e3d1e5a102bfdbdaa21c"
+            },
+            {
+              "name": "class_sample_weights",
+              "type": "FunctionDef",
+              "line": 177,
+              "sha256": "0e2bd98f3ec414ba35df40e9962e226fca22c4a629f87f631c760dc74aadc526"
+            },
+            {
+              "name": "recency_sample_weights",
+              "type": "FunctionDef",
+              "line": 182,
+              "sha256": "14877f9aeeff9b07f3c45820a0472791d309210a724d2b76b92f9e0480d5db76"
+            },
+            {
+              "name": "combined_sample_weights",
+              "type": "FunctionDef",
+              "line": 191,
+              "sha256": "7c29d7d6b079c5b64fc003a7bc1ee7e104a3a46485367c7a3814cd813120e5b5"
+            },
+            {
+              "name": "softmax_np",
+              "type": "FunctionDef",
+              "line": 202,
+              "sha256": "0b5f862a51c932a376c26fcb8494bc2b146682c9b98103501c9662d173c04cb7"
+            },
+            {
+              "name": "proba_to_logits",
+              "type": "FunctionDef",
+              "line": 209,
+              "sha256": "dfece57b6c441e0e7836d1062a2e094886f01eacb4413cf14267eeeeec467732"
+            },
+            {
+              "name": "logit_adjustment_bias",
+              "type": "FunctionDef",
+              "line": 213,
+              "sha256": "598e6ff4e269417080288107ed8a2027401056f24267214e38c291b182b1cab4"
+            },
+            {
+              "name": "apply_bias_and_temperature",
+              "type": "FunctionDef",
+              "line": 219,
+              "sha256": "c1a064a82537406ff0e6dbc1acfb737ab632b141b3658095d929620f992c9178"
+            },
+            {
+              "name": "select_best_calibration",
+              "type": "FunctionDef",
+              "line": 227,
+              "sha256": "09b15bde74654dbfd46db43f203e9f7fd94dc8e28da20b27f0a226e12bbcfaf8"
+            },
+            {
+              "name": "select_best_calibration_two_stage",
+              "type": "FunctionDef",
+              "line": 258,
+              "sha256": "73905a7ae5a1410b81d84c32d4261bef3eb7054098123e7790fa071c9ba25d75"
+            },
+            {
+              "name": "paired_bootstrap_macro_f1_diff",
+              "type": "FunctionDef",
+              "line": 312,
+              "sha256": "a2d0671a2d143ea4813c2f22a29df68d689960c9751f196962e9fd956fadb55a"
+            },
+            {
+              "name": "DAMiniLMExperimentRunner",
+              "type": "ClassDef",
+              "line": 338,
+              "sha256": "9602ba6e5b8e928436c80b74e36c28112b2371c18d88a7dd84db745784d978c5"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "path": "original_sources/baseline_comparison/cell_009.py",
+          "sha256": "b6300b53e47ca6bef94f2441bbd7e188eb9764fff70e7637ffafa8052673e13c",
+          "lines": 116,
+          "execution_count": 11,
+          "declared_module": "shuffle_control.py",
+          "definitions": [
+            {
+              "name": "ShuffleControlValidator",
+              "type": "ClassDef",
+              "line": 43,
+              "sha256": "1b6d4fbabff9a4be4fe36ce04ebaab988d42eca21d6d4f14aa2e2df17bf5d245"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "path": "original_sources/baseline_comparison/cell_010.py",
+          "sha256": "86ffd6aac552ce98c7ac47e427dde75910e3bc08eff22cd458eba9412acaef6f",
+          "lines": 807,
+          "execution_count": 12,
+          "declared_module": "baseline_models.py",
+          "definitions": [
+            {
+              "name": "BaselineModels",
+              "type": "ClassDef",
+              "line": 116,
+              "sha256": "6a2606e92a178e04101bb5622bf92f2c7141f0cb16665cfd00985827e281e05d"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "path": "original_sources/baseline_comparison/cell_011.py",
+          "sha256": "b42693439aaff3a0117879c7e96ce67772f164947d8bad4f54cd0710a3946d1b",
+          "lines": 384,
+          "execution_count": 13,
+          "declared_module": "multifc_preprocessor.py",
+          "definitions": [
+            {
+              "name": "MultiFCPreprocessor",
+              "type": "ClassDef",
+              "line": 58,
+              "sha256": "0f42e88d28522af927dc9e8648c3c0ad39ca3bb5f417eb8488be926de0b38c25"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "path": "original_sources/baseline_comparison/cell_012.py",
+          "sha256": "e508f869b85b2aabf6d853f40bac76aef220cd2a7565b4c9221640910c0f1f58",
+          "lines": 149,
+          "execution_count": 14,
+          "declared_module": "multifc_experiment.py",
+          "definitions": [
+            {
+              "name": "MultiFCExperiment",
+              "type": "ClassDef",
+              "line": 55,
+              "sha256": "0a3dcb6de81dd2cbbc2d1de4dfd59428e0d254ed1effdf5dfc1c3dc46aa735eb"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "path": "original_sources/baseline_comparison/cell_014.py",
+          "sha256": "8b18ee03892c2bef4c56ec6d5acfef592f6d1764f5838afc16aeb5c432036939",
+          "lines": 9,
+          "execution_count": 15,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 15,
+          "path": "original_sources/baseline_comparison/cell_015.py",
+          "sha256": "66033c2d5aae4842bacf1e249d32bc0e7a3caec1fd9ec1b63478046141ca42d0",
+          "lines": 314,
+          "execution_count": null,
+          "declared_module": "run_all.py",
+          "definitions": [
+            {
+              "name": "_shuffle_train_predict_fn",
+              "type": "FunctionDef",
+              "line": 268,
+              "sha256": "ca1da891b7cb657cec7c336beeb42657b844c2fa0b63c93981ea8d91d0bef40b"
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "path": "original_sources/baseline_comparison/cell_016.py",
+          "sha256": "2b4491d97c5a2e673656d31a3c0fe0e1b9729a9c202f96979eb04b756ad47004",
+          "lines": 26,
+          "execution_count": null,
+          "declared_module": null,
+          "definitions": []
+        }
+      ],
+      "segments": {
+        "preamble": {
+          "path": "entrypoints/baseline_comparison/preamble.py",
+          "sha256": "b4686abaa7216a975d3c1b90b3e077719020afefcc71b9078e995c0ffa7e9f8b",
+          "source_cell": 15,
+          "start_line": 1,
+          "end_line": 30
+        },
+        "section_00": {
+          "path": "entrypoints/baseline_comparison/section_00.py",
+          "sha256": "8b75a511b021e56ad362ae1c764a18a2dd13fc804a75026fac06c0a994a9dec1",
+          "source_cell": 15,
+          "start_line": 31,
+          "end_line": 61
+        },
+        "section_01": {
+          "path": "entrypoints/baseline_comparison/section_01.py",
+          "sha256": "47d0508c8e355993d2f5d1aae7b36863772b319d0ca11a506887dca39d77ff5d",
+          "source_cell": 15,
+          "start_line": 62,
+          "end_line": 79
+        },
+        "section_02": {
+          "path": "entrypoints/baseline_comparison/section_02.py",
+          "sha256": "ab63af0e0bff39f40a3480f2ee43a5a15022cd61582b8d102da696c919962363",
+          "source_cell": 15,
+          "start_line": 80,
+          "end_line": 101
+        },
+        "section_03": {
+          "path": "entrypoints/baseline_comparison/section_03.py",
+          "sha256": "404066b789ed5163f3b9832d40be66c41c237d86aa2af154e77b5e33377d9499",
+          "source_cell": 15,
+          "start_line": 102,
+          "end_line": 121
+        },
+        "section_04": {
+          "path": "entrypoints/baseline_comparison/section_04.py",
+          "sha256": "13d22aff3bbf20c49045b70c5080296f5bea1278b02bdc13a5b823b928d354bb",
+          "source_cell": 15,
+          "start_line": 122,
+          "end_line": 142
+        },
+        "section_05": {
+          "path": "entrypoints/baseline_comparison/section_05.py",
+          "sha256": "48f74e9cab9d27e4c6887b6e93c13885ec8f8eeb6be7818bd07841f017b87799",
+          "source_cell": 15,
+          "start_line": 143,
+          "end_line": 166
+        },
+        "section_06": {
+          "path": "entrypoints/baseline_comparison/section_06.py",
+          "sha256": "9f4e5409579d1941369e4195744688fa9dba35df9e3051b941bfac39e0f12687",
+          "source_cell": 15,
+          "start_line": 167,
+          "end_line": 204
+        },
+        "section_07": {
+          "path": "entrypoints/baseline_comparison/section_07.py",
+          "sha256": "55357a88aaacb96ce17eb867e52529f7a6fa0e36e6700988c447615aec20b16b",
+          "source_cell": 15,
+          "start_line": 205,
+          "end_line": 222
+        },
+        "section_08": {
+          "path": "entrypoints/baseline_comparison/section_08.py",
+          "sha256": "c4e933c49a2155afffbbb40eaef19eedc9d9f8e6aae4265fd7376491fc9cc47a",
+          "source_cell": 15,
+          "start_line": 223,
+          "end_line": 251
+        },
+        "section_09": {
+          "path": "entrypoints/baseline_comparison/section_09.py",
+          "sha256": "7010c1fec705c1188db830786408a093bac41ed4c66033ca330570e1e35f0535",
+          "source_cell": 15,
+          "start_line": 252,
+          "end_line": 284
+        },
+        "section_10": {
+          "path": "entrypoints/baseline_comparison/section_10.py",
+          "sha256": "80d1131bd32b627de1ce5a4b5514940353f49dfba5f56b6331aea7f311a60401",
+          "source_cell": 15,
+          "start_line": 285,
+          "end_line": 299
+        },
+        "section_11": {
+          "path": "entrypoints/baseline_comparison/section_11.py",
+          "sha256": "2871eb4dd3573eec78f00f0001da0c17f0795c3a4e1c830953bbb18adc4e0ab8",
+          "source_cell": 15,
+          "start_line": 300,
+          "end_line": 304
+        },
+        "section_12": {
+          "path": "entrypoints/baseline_comparison/section_12.py",
+          "sha256": "855efdf55973194701f450b2e8276f934f4d380d306b2fbfefc6089629f27a43",
+          "source_cell": 15,
+          "start_line": 305,
+          "end_line": 314
+        },
+        "prepare_main": {
+          "path": "entrypoints/baseline_comparison/prepare_main.py",
+          "sha256": "b3a92aaaecdf5dcb53edab55e6e46976a6cff02455092e5844ac1557a27ef12d",
+          "source_cell": 15,
+          "start_line": 167,
+          "end_line": 189
+        },
+        "prepare_ablation_00": {
+          "path": "entrypoints/baseline_comparison/prepare_ablation_00.py",
+          "sha256": "9d14ddc54c13d42d762af404d8a9c0afe2893e52a7b64423c3adc598607ec4d0",
+          "source_cell": 15,
+          "start_line": 229,
+          "end_line": 229
+        },
+        "prepare_ablation_01": {
+          "path": "entrypoints/baseline_comparison/prepare_ablation_01.py",
+          "sha256": "5d690feb2fac14abe3c35a497f6e774cbed3815a4b31fd4a6280a7ea241fcca0",
+          "source_cell": 15,
+          "start_line": 230,
+          "end_line": 230
+        },
+        "prepare_ablation_02": {
+          "path": "entrypoints/baseline_comparison/prepare_ablation_02.py",
+          "sha256": "0d66cb6dd9eff41d67c111f2a290a5e67640c5deab12f70faefc8de3a397bc3a",
+          "source_cell": 15,
+          "start_line": 231,
+          "end_line": 231
+        },
+        "prepare_ablation_03": {
+          "path": "entrypoints/baseline_comparison/prepare_ablation_03.py",
+          "sha256": "456709f2bb70900c52afa815e9c618d12b455fa4bae7d4660a2467a09049bfd7",
+          "source_cell": 15,
+          "start_line": 233,
+          "end_line": 233
+        },
+        "prepare_baselines": {
+          "path": "entrypoints/baseline_comparison/prepare_baselines.py",
+          "sha256": "9e44557974740ee5c5dd4f305ba0206fd24cb69c8c9b056effebfcac555e35f2",
+          "source_cell": 15,
+          "start_line": 87,
+          "end_line": 87
+        },
+        "prepare_include_transformer_baselines": {
+          "path": "entrypoints/baseline_comparison/prepare_include_transformer_baselines.py",
+          "sha256": "dc1bce4c56e7d0926f4b8b068bd244974b7a948c12223c686c5920ffa7d8894e",
+          "source_cell": 15,
+          "start_line": 90,
+          "end_line": 90
+        }
+      }
+    },
+    "drift_analysis": {
+      "notebook_path": "original_notebooks/Exp-2--drift-analysis-experimentations-v8-0-final(1).ipynb",
+      "notebook_sha256": "a4654e41d3e54a81ef5342712b98c5d7d990a2b64f7d717a6bb3a6f48d834f43",
+      "cells": [
+        {
+          "index": 2,
+          "path": "original_sources/drift_analysis/cell_002.py",
+          "sha256": "b1f63652959bac8d6c2f9d0a2d508ca694f5971918309c632353df964b79dedf",
+          "lines": 454,
+          "execution_count": 8,
+          "declared_module": "liar2_preprocessor.py",
+          "definitions": [
+            {
+              "name": "Liar2Preprocessor",
+              "type": "ClassDef",
+              "line": 56,
+              "sha256": "75aecdc467cb1bf3902e30571059e145a2b00d07619e3d0ade70fc35e2ffdc9e"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "path": "original_sources/drift_analysis/cell_004.py",
+          "sha256": "959889bf5d287e63c0713d207aed1d7bfb220854746e60f8723989b6d23f20af",
+          "lines": 599,
+          "execution_count": 9,
+          "declared_module": "drift_analysis.py",
+          "definitions": [
+            {
+              "name": "DriftAnalysis",
+              "type": "ClassDef",
+              "line": 90,
+              "sha256": "1d97be3291017f64a73220741e08c4afba7a1c0be475f30d96c61a31f8d94d40"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "path": "original_sources/drift_analysis/cell_006.py",
+          "sha256": "8b18ee03892c2bef4c56ec6d5acfef592f6d1764f5838afc16aeb5c432036939",
+          "lines": 9,
+          "execution_count": 10,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 7,
+          "path": "original_sources/drift_analysis/cell_007.py",
+          "sha256": "9c8a07228693f1eda0243e46e24188e1bc892b7478e43bcb308277d0c68fd389",
+          "lines": 9,
+          "execution_count": 11,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 8,
+          "path": "original_sources/drift_analysis/cell_008.py",
+          "sha256": "d91ff92f7cf3cc3c5325889949f42f2670ea291c7dac65eee8fdcaf7e8495900",
+          "lines": 11,
+          "execution_count": 12,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 9,
+          "path": "original_sources/drift_analysis/cell_009.py",
+          "sha256": "1a20969b0b881e90246451866acbf2107069e08410bd866e15b6b6272d4478f0",
+          "lines": 2,
+          "execution_count": 13,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 10,
+          "path": "original_sources/drift_analysis/cell_010.py",
+          "sha256": "77564c6e28de74c308abfa1b79e8e4ee6df94b14ef0c73b63d0fc82df8e262d3",
+          "lines": 2,
+          "execution_count": 14,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 11,
+          "path": "original_sources/drift_analysis/cell_011.py",
+          "sha256": "8de7533085c77c723491fe023331216fc787cdcfb042851dc8a85f707529353f",
+          "lines": 2,
+          "execution_count": 15,
+          "declared_module": null,
+          "definitions": []
+        }
+      ]
+    },
+    "da_minilm_rwac": {
+      "notebook_path": "original_notebooks/da-minilm-rwac-codebase-v3-0.ipynb",
+      "notebook_sha256": "ca1714be49c2f3ed46c88ccab9a43d0cc80ba85fbfd078daf4ee1990ca549feb",
+      "cells": [
+        {
+          "index": 1,
+          "path": "original_sources/da_minilm_rwac/cell_001.py",
+          "sha256": "c05808579f7ac4a5e1205f074eb86d2113c5c665abd29e11fd401847ae673cca",
+          "lines": 362,
+          "execution_count": 19,
+          "declared_module": "liar_preprocessor.py",
+          "definitions": [
+            {
+              "name": "LiarPreprocessor",
+              "type": "ClassDef",
+              "line": 59,
+              "sha256": "c1d6610ea09745bd64ffebd9ce19ca7905d1d91c1cbfc3519d2a0e32d744226a"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "path": "original_sources/da_minilm_rwac/cell_002.py",
+          "sha256": "6b4e16e3502f1f06d751372d73c6eb440601a21f5e19f64192f4c2fca777ad3f",
+          "lines": 491,
+          "execution_count": 20,
+          "declared_module": "liar2_preprocessor.py",
+          "definitions": [
+            {
+              "name": "Liar2Preprocessor",
+              "type": "ClassDef",
+              "line": 56,
+              "sha256": "891aebd15c6701c7bb47417956c7b768fc817031f44da762e1462d8ac8203aa4"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "path": "original_sources/da_minilm_rwac/cell_003.py",
+          "sha256": "959889bf5d287e63c0713d207aed1d7bfb220854746e60f8723989b6d23f20af",
+          "lines": 599,
+          "execution_count": 21,
+          "declared_module": "drift_analysis.py",
+          "definitions": [
+            {
+              "name": "DriftAnalysis",
+              "type": "ClassDef",
+              "line": 90,
+              "sha256": "1d97be3291017f64a73220741e08c4afba7a1c0be475f30d96c61a31f8d94d40"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "path": "original_sources/da_minilm_rwac/cell_005.py",
+          "sha256": "3cab6c60a850d26c2e5a265c9964342cefc945e463bb8346047a7ed5b8c077b7",
+          "lines": 117,
+          "execution_count": 22,
+          "declared_module": "temporal_splitter.py",
+          "definitions": [
+            {
+              "name": "TemporalSplitter",
+              "type": "ClassDef",
+              "line": 38,
+              "sha256": "7e7511302e2034aa629689a346dbb47c12dfe0b1356d9fa1d9112c67e956bd46"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "path": "original_sources/da_minilm_rwac/cell_007.py",
+          "sha256": "5fbb4608458e830ae69024b1b3545eea27db30bca70d8e149d73296b6a3b16df",
+          "lines": 235,
+          "execution_count": 23,
+          "declared_module": "da_minilm_rwc_model.py",
+          "definitions": [
+            {
+              "name": "set_all_seeds",
+              "type": "FunctionDef",
+              "line": 36,
+              "sha256": "eddc416f682dc54ba5e4d5f711517a9fbce1125d48b543b546f372bf0e38edde"
+            },
+            {
+              "name": "EmbeddingDataset",
+              "type": "ClassDef",
+              "line": 44,
+              "sha256": "00146e8af154edf5bd201644c120eec59acd68be741cb1608f07320a91d522f1"
+            },
+            {
+              "name": "DAMiniLMClassifier",
+              "type": "ClassDef",
+              "line": 62,
+              "sha256": "e0c3bde3ea9536b10f691f1d81468c8f1560d777ce0d23ba98fe89f3674fa7d8"
+            },
+            {
+              "name": "predict_da_minilm_proba",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "8855e864377edb3445ea84730a80623d4abd313dff7cae00f3e7ba6bec436bb6"
+            },
+            {
+              "name": "DAMiniLMModel",
+              "type": "ClassDef",
+              "line": 93,
+              "sha256": "e38c336ccd11957fe2b7bddbd3d72f633efc20429f2c9bce67696c91d8464112"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "path": "original_sources/da_minilm_rwac/cell_008.py",
+          "sha256": "a546cc2c4bec2d897d2fe7ec4f690199be400be7d4b8b5ed1277501bd2def1d6",
+          "lines": 665,
+          "execution_count": 24,
+          "declared_module": "da_minilm_experiment_runner.py",
+          "definitions": [
+            {
+              "name": "ordinal_mae",
+              "type": "FunctionDef",
+              "line": 82,
+              "sha256": "e72614bf254383d9ac65a8e50727936bb02de2f0f4fd945de44ebfef53921fbb"
+            },
+            {
+              "name": "within_one_accuracy",
+              "type": "FunctionDef",
+              "line": 86,
+              "sha256": "24d0c4e408fed0a815af4dde6241209e5480629af1607314fc7f324039b56694"
+            },
+            {
+              "name": "expected_calibration_error",
+              "type": "FunctionDef",
+              "line": 90,
+              "sha256": "cb4b139fb0a528847add938bd8c9684c05fd23a9f712743b8562d5297f52d87e"
+            },
+            {
+              "name": "multiclass_brier_score",
+              "type": "FunctionDef",
+              "line": 111,
+              "sha256": "f525f3653bb334e393cc26cdef6e786965aa55e135fb216bfa6359761a0301e6"
+            },
+            {
+              "name": "safe_nll",
+              "type": "FunctionDef",
+              "line": 117,
+              "sha256": "c31f9cdb39cfb3b4a971007701e545c2427a737cb4b291d17b683c17333d2fdf"
+            },
+            {
+              "name": "evaluate_predictions",
+              "type": "FunctionDef",
+              "line": 121,
+              "sha256": "969aae801b6a1898ee5f64f6a90dda4e954382f095c3a38c65b2f3dfc31327a8"
+            },
+            {
+              "name": "normalize_weights",
+              "type": "FunctionDef",
+              "line": 159,
+              "sha256": "316ff9baa07d3f47260a6303b3dc82d86aa4825b51f720159af34c9d1f009ce1"
+            },
+            {
+              "name": "effective_number_class_weights",
+              "type": "FunctionDef",
+              "line": 165,
+              "sha256": "8ece3706248395b63d8b08fa73becff58951173a9392e3d1e5a102bfdbdaa21c"
+            },
+            {
+              "name": "class_sample_weights",
+              "type": "FunctionDef",
+              "line": 177,
+              "sha256": "0e2bd98f3ec414ba35df40e9962e226fca22c4a629f87f631c760dc74aadc526"
+            },
+            {
+              "name": "recency_sample_weights",
+              "type": "FunctionDef",
+              "line": 182,
+              "sha256": "14877f9aeeff9b07f3c45820a0472791d309210a724d2b76b92f9e0480d5db76"
+            },
+            {
+              "name": "combined_sample_weights",
+              "type": "FunctionDef",
+              "line": 191,
+              "sha256": "7c29d7d6b079c5b64fc003a7bc1ee7e104a3a46485367c7a3814cd813120e5b5"
+            },
+            {
+              "name": "softmax_np",
+              "type": "FunctionDef",
+              "line": 202,
+              "sha256": "0b5f862a51c932a376c26fcb8494bc2b146682c9b98103501c9662d173c04cb7"
+            },
+            {
+              "name": "proba_to_logits",
+              "type": "FunctionDef",
+              "line": 209,
+              "sha256": "dfece57b6c441e0e7836d1062a2e094886f01eacb4413cf14267eeeeec467732"
+            },
+            {
+              "name": "logit_adjustment_bias",
+              "type": "FunctionDef",
+              "line": 213,
+              "sha256": "598e6ff4e269417080288107ed8a2027401056f24267214e38c291b182b1cab4"
+            },
+            {
+              "name": "apply_bias_and_temperature",
+              "type": "FunctionDef",
+              "line": 219,
+              "sha256": "c1a064a82537406ff0e6dbc1acfb737ab632b141b3658095d929620f992c9178"
+            },
+            {
+              "name": "select_best_calibration",
+              "type": "FunctionDef",
+              "line": 227,
+              "sha256": "09b15bde74654dbfd46db43f203e9f7fd94dc8e28da20b27f0a226e12bbcfaf8"
+            },
+            {
+              "name": "select_best_calibration_two_stage",
+              "type": "FunctionDef",
+              "line": 258,
+              "sha256": "73905a7ae5a1410b81d84c32d4261bef3eb7054098123e7790fa071c9ba25d75"
+            },
+            {
+              "name": "paired_bootstrap_macro_f1_diff",
+              "type": "FunctionDef",
+              "line": 312,
+              "sha256": "a2d0671a2d143ea4813c2f22a29df68d689960c9751f196962e9fd956fadb55a"
+            },
+            {
+              "name": "DAMiniLMExperimentRunner",
+              "type": "ClassDef",
+              "line": 338,
+              "sha256": "9602ba6e5b8e928436c80b74e36c28112b2371c18d88a7dd84db745784d978c5"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "path": "original_sources/da_minilm_rwac/cell_009.py",
+          "sha256": "b6300b53e47ca6bef94f2441bbd7e188eb9764fff70e7637ffafa8052673e13c",
+          "lines": 116,
+          "execution_count": 25,
+          "declared_module": "shuffle_control.py",
+          "definitions": [
+            {
+              "name": "ShuffleControlValidator",
+              "type": "ClassDef",
+              "line": 43,
+              "sha256": "1b6d4fbabff9a4be4fe36ce04ebaab988d42eca21d6d4f14aa2e2df17bf5d245"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "path": "original_sources/da_minilm_rwac/cell_010.py",
+          "sha256": "86ffd6aac552ce98c7ac47e427dde75910e3bc08eff22cd458eba9412acaef6f",
+          "lines": 807,
+          "execution_count": 26,
+          "declared_module": "baseline_models.py",
+          "definitions": [
+            {
+              "name": "BaselineModels",
+              "type": "ClassDef",
+              "line": 116,
+              "sha256": "6a2606e92a178e04101bb5622bf92f2c7141f0cb16665cfd00985827e281e05d"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "path": "original_sources/da_minilm_rwac/cell_011.py",
+          "sha256": "b42693439aaff3a0117879c7e96ce67772f164947d8bad4f54cd0710a3946d1b",
+          "lines": 384,
+          "execution_count": 27,
+          "declared_module": "multifc_preprocessor.py",
+          "definitions": [
+            {
+              "name": "MultiFCPreprocessor",
+              "type": "ClassDef",
+              "line": 58,
+              "sha256": "0f42e88d28522af927dc9e8648c3c0ad39ca3bb5f417eb8488be926de0b38c25"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "path": "original_sources/da_minilm_rwac/cell_012.py",
+          "sha256": "e508f869b85b2aabf6d853f40bac76aef220cd2a7565b4c9221640910c0f1f58",
+          "lines": 149,
+          "execution_count": 28,
+          "declared_module": "multifc_experiment.py",
+          "definitions": [
+            {
+              "name": "MultiFCExperiment",
+              "type": "ClassDef",
+              "line": 55,
+              "sha256": "0a3dcb6de81dd2cbbc2d1de4dfd59428e0d254ed1effdf5dfc1c3dc46aa735eb"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "path": "original_sources/da_minilm_rwac/cell_014.py",
+          "sha256": "09cd9a0612ed1f0eb12b2eeb0e05bc640617b50eb6a808e0889280e91e72cdc4",
+          "lines": 11,
+          "execution_count": 29,
+          "declared_module": null,
+          "definitions": []
+        },
+        {
+          "index": 15,
+          "path": "original_sources/da_minilm_rwac/cell_015.py",
+          "sha256": "22ada5ab645d0fc3667c6745744995d0a5d9fa8fd6d5091191f255132d3d8cff",
+          "lines": 259,
+          "execution_count": 30,
+          "declared_module": "run_all.py",
+          "definitions": [
+            {
+              "name": "_shuffle_train_predict_fn",
+              "type": "FunctionDef",
+              "line": 213,
+              "sha256": "ca1da891b7cb657cec7c336beeb42657b844c2fa0b63c93981ea8d91d0bef40b"
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "path": "original_sources/da_minilm_rwac/cell_016.py",
+          "sha256": "2b4491d97c5a2e673656d31a3c0fe0e1b9729a9c202f96979eb04b756ad47004",
+          "lines": 26,
+          "execution_count": 31,
+          "declared_module": null,
+          "definitions": []
+        }
+      ],
+      "segments": {
+        "preamble": {
+          "path": "entrypoints/da_minilm_rwac/preamble.py",
+          "sha256": "4312411d49fce34a2e2bb19db2b7bc0b6e4b6681dbbea8fdeaded3d4edda0930",
+          "source_cell": 15,
+          "start_line": 1,
+          "end_line": 30
+        },
+        "section_00": {
+          "path": "entrypoints/da_minilm_rwac/section_00.py",
+          "sha256": "8b75a511b021e56ad362ae1c764a18a2dd13fc804a75026fac06c0a994a9dec1",
+          "source_cell": 15,
+          "start_line": 31,
+          "end_line": 61
+        },
+        "section_01": {
+          "path": "entrypoints/da_minilm_rwac/section_01.py",
+          "sha256": "2402fa1c43bc0b51aa85475af3ba15274125739a9b8a272493e1f6d075416090",
+          "source_cell": 15,
+          "start_line": 62,
+          "end_line": 84
+        },
+        "section_03": {
+          "path": "entrypoints/da_minilm_rwac/section_03.py",
+          "sha256": "4865660691ff8ab8a75138ad54abf4dd428913fabcc348ebfc37cda25eadde37",
+          "source_cell": 15,
+          "start_line": 85,
+          "end_line": 113
+        },
+        "section_06": {
+          "path": "entrypoints/da_minilm_rwac/section_06.py",
+          "sha256": "6b3b23928edda18412034d64e56f71c347f9821ac007ef825f0052ce55b33f0b",
+          "source_cell": 15,
+          "start_line": 114,
+          "end_line": 149
+        },
+        "section_07": {
+          "path": "entrypoints/da_minilm_rwac/section_07.py",
+          "sha256": "55357a88aaacb96ce17eb867e52529f7a6fa0e36e6700988c447615aec20b16b",
+          "source_cell": 15,
+          "start_line": 150,
+          "end_line": 167
+        },
+        "section_08": {
+          "path": "entrypoints/da_minilm_rwac/section_08.py",
+          "sha256": "0818557a850938107d6b8f3938284cc9e443a84cec4b320ef6b0008934b16fe3",
+          "source_cell": 15,
+          "start_line": 168,
+          "end_line": 196
+        },
+        "section_09": {
+          "path": "entrypoints/da_minilm_rwac/section_09.py",
+          "sha256": "9856df23c4c49defe1a9a77b341574b7c6f016c140a5299a22b0fa2586890d0d",
+          "source_cell": 15,
+          "start_line": 197,
+          "end_line": 229
+        },
+        "section_10": {
+          "path": "entrypoints/da_minilm_rwac/section_10.py",
+          "sha256": "25ce3562a4e721592c64945ef1e144dcc1dc1ec6f7f8147be90fb578c711b20f",
+          "source_cell": 15,
+          "start_line": 230,
+          "end_line": 244
+        },
+        "section_11": {
+          "path": "entrypoints/da_minilm_rwac/section_11.py",
+          "sha256": "2871eb4dd3573eec78f00f0001da0c17f0795c3a4e1c830953bbb18adc4e0ab8",
+          "source_cell": 15,
+          "start_line": 245,
+          "end_line": 249
+        },
+        "section_12": {
+          "path": "entrypoints/da_minilm_rwac/section_12.py",
+          "sha256": "855efdf55973194701f450b2e8276f934f4d380d306b2fbfefc6089629f27a43",
+          "source_cell": 15,
+          "start_line": 250,
+          "end_line": 259
+        },
+        "prepare_main": {
+          "path": "entrypoints/da_minilm_rwac/prepare_main.py",
+          "sha256": "704914d2f03f1a55826a7790aded4669558a2da4087e8df9644ef19180d1160a",
+          "source_cell": 15,
+          "start_line": 114,
+          "end_line": 134
+        },
+        "prepare_ablation_00": {
+          "path": "entrypoints/da_minilm_rwac/prepare_ablation_00.py",
+          "sha256": "9d14ddc54c13d42d762af404d8a9c0afe2893e52a7b64423c3adc598607ec4d0",
+          "source_cell": 15,
+          "start_line": 174,
+          "end_line": 174
+        },
+        "prepare_ablation_01": {
+          "path": "entrypoints/da_minilm_rwac/prepare_ablation_01.py",
+          "sha256": "5d690feb2fac14abe3c35a497f6e774cbed3815a4b31fd4a6280a7ea241fcca0",
+          "source_cell": 15,
+          "start_line": 175,
+          "end_line": 175
+        },
+        "prepare_ablation_02": {
+          "path": "entrypoints/da_minilm_rwac/prepare_ablation_02.py",
+          "sha256": "0d66cb6dd9eff41d67c111f2a290a5e67640c5deab12f70faefc8de3a397bc3a",
+          "source_cell": 15,
+          "start_line": 176,
+          "end_line": 176
+        },
+        "prepare_ablation_03": {
+          "path": "entrypoints/da_minilm_rwac/prepare_ablation_03.py",
+          "sha256": "065a3b30e92540d97491e24afcd32b2ac2b07084f446991a758f6dfe16904819",
+          "source_cell": 15,
+          "start_line": 178,
+          "end_line": 178
+        }
+      }
+    }
+  }
+}
