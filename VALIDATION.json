@@ -1,0 +1,89 @@
+{
+  "source_verification": {
+    "status": "verified",
+    "notebooks": 7,
+    "code_cells": 88,
+    "entrypoint_segments": 37,
+    "class_or_function_definitions": 183,
+    "routes": 28
+  },
+  "attachments": [
+    {
+      "experiment": "liar2_label_granularity",
+      "uploaded_name": "exp-4-liar2-label-granularity-experimentsv6-final.ipynb",
+      "sha256": "b9e62dd915b7dfc1169e5b97a8f0639421829e75da3d380f7c6bf8d70f4c2ad0",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "ensemble",
+      "uploaded_name": "da-ensemble-exp-v3-0(1).ipynb",
+      "sha256": "131301e3d5b0ab95fa4c78e8b888d70ae38f0ab11db13b0480622e5665370694",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "multifc_da_minilm",
+      "uploaded_name": "da-minilm-multifc-dataset-final.ipynb",
+      "sha256": "6915002aa4bc89fedd740190c03f8f9fdce9c29843e4ca4f6d78d50a4160252f",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "multifc_label_granularity",
+      "uploaded_name": "multifc-label-granularity-experiments(2).ipynb",
+      "sha256": "5d0460ff3abb113ad32f88ce82c062df4d61e26e0c0ecdb3b9057c1fd0661670",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "baseline_comparison",
+      "uploaded_name": "exp1-baseline-models-comparisons-codebase-v10-0-final.ipynb",
+      "sha256": "93ce5727ef416aee23f9385dea25750fcd22adf793158dc5a0f652b622a95998",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "drift_analysis",
+      "uploaded_name": "Exp-2--drift-analysis-experimentations-v8-0-final(1).ipynb",
+      "sha256": "a4654e41d3e54a81ef5342712b98c5d7d990a2b64f7d717a6bb3a6f48d834f43",
+      "identical_to_upload": true
+    },
+    {
+      "experiment": "da_minilm_rwac",
+      "uploaded_name": "da-minilm-rwac-codebase-v3-0.ipynb",
+      "sha256": "ca1714be49c2f3ed46c88ccab9a43d0cc80ba85fbfd078daf4ee1990ca549feb",
+      "identical_to_upload": true
+    }
+  ],
+  "bundled_checks": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 16,
+    "status": "passed"
+  },
+  "executed_validation": [
+    "Terminal list, verify, and dry-run commands",
+    "Terminal drift preprocessing on synthetic CSVs in paths containing spaces",
+    "Exact equality of adapted and unadapted D01/D02/D03/D05 summaries on the same synthetic data",
+    "Separate preprocessing behaviour for all three LIAR2 versions",
+    "Original cell replay order, including both embedding-enabled drift calls",
+    "Source-segment dependencies for bootstrap, ablation, shuffle control, and rolling windows"
+  ],
+  "full_model_training_executed": false,
+  "numerical_reproduction_of_journal_results_verified": false,
+  "reason": "Original datasets, pretrained weights, and original environment lockfile were not supplied.",
+  "experimental_source_modifications": [],
+  "wrapper_only_additions": [
+    "Public experiment methods",
+    "Terminal CLI and isolated workers",
+    "Filesystem path aliases and terminal display",
+    "Execution manifests and logs",
+    "Integrity verification and tests"
+  ],
+  "readme_words": 3497,
+  "documentation_checks": {
+    "status": "passed",
+    "terminal_examples_parsed": 23,
+    "terminal_run_examples_checked_with_dry_run": 19,
+    "python_code_blocks_parsed": 3,
+    "documented_routes_checked": 28,
+    "unchanged_files_compared": 140,
+    "readme_words": 3497,
+    "full_training_executed": false
+  }
+}
