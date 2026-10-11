@@ -1,0 +1,1820 @@
+{
+  "schema_version": 1,
+  "experiments": {
+    "liar2_label_granularity": {
+      "title": "LIAR2 six-, three-, and two-class experiments",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 13
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 17
+            },
+            {
+              "kind": "cell",
+              "index": 19
+            },
+            {
+              "kind": "cell",
+              "index": 20
+            },
+            {
+              "kind": "cell",
+              "index": 21
+            },
+            {
+              "kind": "cell",
+              "index": 23
+            },
+            {
+              "kind": "cell",
+              "index": 24
+            },
+            {
+              "kind": "cell",
+              "index": 26
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        },
+        "application": {
+          "description": "Execute the original application in its exact cell order.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 13
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 17
+            },
+            {
+              "kind": "cell",
+              "index": 19
+            },
+            {
+              "kind": "cell",
+              "index": 20
+            },
+            {
+              "kind": "cell",
+              "index": 21
+            },
+            {
+              "kind": "cell",
+              "index": 23
+            },
+            {
+              "kind": "cell",
+              "index": 24
+            },
+            {
+              "kind": "cell",
+              "index": 26
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        }
+      }
+    },
+    "ensemble": {
+      "title": "LIAR2 model and seed ensembles",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 0
+            },
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        },
+        "application": {
+          "description": "Execute the original application in its exact cell order.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 0
+            },
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        }
+      }
+    },
+    "multifc_da_minilm": {
+      "title": "MultiFC DA-MiniLM evaluation",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 13
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 16
+            }
+          ],
+          "datasets": [
+            "multifc"
+          ]
+        },
+        "application": {
+          "description": "Execute the original application in its exact cell order.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 13
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 16
+            }
+          ],
+          "datasets": [
+            "multifc"
+          ]
+        }
+      }
+    },
+    "multifc_label_granularity": {
+      "title": "MultiFC three- and two-class experiments",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 17
+            },
+            {
+              "kind": "cell",
+              "index": 19
+            },
+            {
+              "kind": "cell",
+              "index": 21
+            },
+            {
+              "kind": "cell",
+              "index": 23
+            },
+            {
+              "kind": "cell",
+              "index": 24
+            },
+            {
+              "kind": "cell",
+              "index": 26
+            },
+            {
+              "kind": "cell",
+              "index": 28
+            },
+            {
+              "kind": "cell",
+              "index": 30
+            },
+            {
+              "kind": "cell",
+              "index": 32
+            }
+          ],
+          "datasets": [
+            "multifc"
+          ]
+        },
+        "application": {
+          "description": "Execute the original application in its exact cell order.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 17
+            },
+            {
+              "kind": "cell",
+              "index": 19
+            },
+            {
+              "kind": "cell",
+              "index": 21
+            },
+            {
+              "kind": "cell",
+              "index": 23
+            },
+            {
+              "kind": "cell",
+              "index": 24
+            },
+            {
+              "kind": "cell",
+              "index": 26
+            },
+            {
+              "kind": "cell",
+              "index": 28
+            },
+            {
+              "kind": "cell",
+              "index": 30
+            },
+            {
+              "kind": "cell",
+              "index": 32
+            }
+          ],
+          "datasets": [
+            "multifc"
+          ]
+        }
+      }
+    },
+    "baseline_comparison": {
+      "title": "Classical and transformer baseline comparison",
+      "default_stage": "baselines",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 16
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "baselines": {
+          "description": "Original baseline battery and chronological DistilBERT comparison; sections 0\u20133.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_02"
+            },
+            {
+              "kind": "segment",
+              "name": "section_03"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "distilbert_chronological": {
+          "description": "Original five-seed chronological DistilBERT experiment.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_baselines"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_include_transformer_baselines"
+            },
+            {
+              "kind": "segment",
+              "name": "section_03"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "drift": {
+          "description": "Drift diagnostics using this notebook\u2019s own cohort and original D04 switch.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_include_transformer_baselines"
+            },
+            {
+              "kind": "segment",
+              "name": "section_04"
+            },
+            {
+              "kind": "segment",
+              "name": "section_05"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "main": {
+          "description": "Original DA-MiniLM-RWAC and MiniLM-LogReg-RW main battery with its summaries.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_06"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "paired_bootstrap": {
+          "description": "Main battery, then the original paired bootstrap of its predictions.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_06"
+            },
+            {
+              "kind": "segment",
+              "name": "section_07"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "component_ablation": {
+          "description": "Original model and embedding preparation, then component ablation.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "section_08"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "shuffle_control": {
+          "description": "Original embedding and split preparation, then the 300-shuffle null test.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_00"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_02"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_03"
+            },
+            {
+              "kind": "segment",
+              "name": "section_09"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "rolling_windows": {
+          "description": "Original model and embedding preparation, then rolling-window evaluation.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "section_10"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        }
+      }
+    },
+    "drift_analysis": {
+      "title": "D01\u2013D05 drift diagnostics",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        },
+        "application": {
+          "description": "Execute the original application in its exact cell order.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        },
+        "prepare": {
+          "description": "Original preprocessing, duplicate handling, and chronological splitting only.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 4
+            },
+            {
+              "kind": "cell",
+              "index": 6
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            }
+          ],
+          "datasets": [
+            "liar2"
+          ]
+        }
+      }
+    },
+    "da_minilm_rwac": {
+      "title": "LIAR2 DA-MiniLM-RWAC experiments",
+      "default_stage": "application",
+      "stages": {
+        "notebook": {
+          "description": "Replay every original code cell in notebook order, including utility cells.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            },
+            {
+              "kind": "cell",
+              "index": 16
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "application": {
+          "description": "Original selected run_all application; no changes to its section sequence.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "cell",
+              "index": 14
+            },
+            {
+              "kind": "cell",
+              "index": 15
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "distilbert_chronological": {
+          "description": "Original five-seed chronological DistilBERT experiment on the deduplicated cohort.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_03"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "main": {
+          "description": "Original DA-MiniLM-RWAC and MiniLM-LogReg-RW main battery with its summaries.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_06"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "paired_bootstrap": {
+          "description": "Main battery, then the original paired bootstrap of its predictions.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "section_06"
+            },
+            {
+              "kind": "segment",
+              "name": "section_07"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "component_ablation": {
+          "description": "Original model and embedding preparation, then component ablation.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "section_08"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "shuffle_control": {
+          "description": "Original embedding and split preparation, then the 300-shuffle null test.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_00"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_02"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_ablation_03"
+            },
+            {
+              "kind": "segment",
+              "name": "section_09"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        },
+        "rolling_windows": {
+          "description": "Original model and embedding preparation, then rolling-window evaluation.",
+          "steps": [
+            {
+              "kind": "cell",
+              "index": 1
+            },
+            {
+              "kind": "cell",
+              "index": 2
+            },
+            {
+              "kind": "cell",
+              "index": 3
+            },
+            {
+              "kind": "cell",
+              "index": 5
+            },
+            {
+              "kind": "cell",
+              "index": 7
+            },
+            {
+              "kind": "cell",
+              "index": 8
+            },
+            {
+              "kind": "cell",
+              "index": 9
+            },
+            {
+              "kind": "cell",
+              "index": 10
+            },
+            {
+              "kind": "cell",
+              "index": 11
+            },
+            {
+              "kind": "cell",
+              "index": 12
+            },
+            {
+              "kind": "segment",
+              "name": "preamble"
+            },
+            {
+              "kind": "segment",
+              "name": "section_00"
+            },
+            {
+              "kind": "segment",
+              "name": "section_01"
+            },
+            {
+              "kind": "segment",
+              "name": "prepare_main"
+            },
+            {
+              "kind": "segment",
+              "name": "section_10"
+            }
+          ],
+          "datasets": [
+            "liar",
+            "liar2"
+          ]
+        }
+      }
+    }
+  }
+}
